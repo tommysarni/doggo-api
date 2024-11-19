@@ -11,7 +11,7 @@ export default function handler(req, res) {
   const { url = '' } = req || {};
   const [, breedName] = url.split('breeds/');
 
-  console.log({ method: req.method, url, breedName });
+  console.log({ request: req, method: req.method, url, breedName });
 
   if (!breedName) {
     res.statusCode = 400;
