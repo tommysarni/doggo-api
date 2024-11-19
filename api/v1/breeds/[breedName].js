@@ -1,5 +1,5 @@
-import dogBreeds from '../../data/breeds.js';
-import { searchByBreedName } from '../../utils/search.js';
+import dogBreeds from '../../../data/breeds.js';
+import { searchByBreedName } from '../../../utils/search.js';
 
 export default function handler(req, res) {
   if (req.method !== 'GET') {
@@ -11,8 +11,6 @@ export default function handler(req, res) {
   const { url = '' } = req || {};
   const [, slug = ''] = url.split('breeds/');
   const [breedName] = slug.split('?') || [];
-
-  console.log({ url, slug, breedName });
 
   if (!breedName) {
     res.statusCode = 400;
