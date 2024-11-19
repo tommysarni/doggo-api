@@ -1,6 +1,6 @@
 import { createServer } from 'http';
 import request from 'supertest';
-import handler from '../api/breeds/[breedName].js';
+import handler from '../api/v1/breeds/[breedName].js';
 
 const createTestServer = (routeHandler) => {
   return createServer((req, res) => {
