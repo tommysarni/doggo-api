@@ -7,4 +7,4 @@ const searchByBreedName = (name, data) => {
 };
 
 
-export {searchByBreedName};
+export { searchByBreedName };

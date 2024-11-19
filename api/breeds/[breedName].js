@@ -1,19 +1,21 @@
 import dogBreeds from '../../data/breeds.js';
-import {searchByBreedName} from '../../utils/search.js';
+import { searchByBreedName } from '../../utils/search.js';
 
 export default function handler(req, res) {
   if (req.method !== 'GET') {
     res.statusCode = 400;
-    res.end(JSON.stringify({error: 'Wrong request method.'}));
+    res.end(JSON.stringify({ error: 'Wrong request method.' }));
     return;
   }
 
-  const {url = ''} = req || {};
+  const { url = '' } = req || {};
   const [, breedName] = url.split('breeds/');
+
+  console.log({ method: req.method, url, breedName });
 
   if (!breedName) {
     res.statusCode = 400;
-    res.end(JSON.stringify({error: 'Breed Name is required.'}));
+    res.end(JSON.stringify({ error: 'Breed Name is required.' }));
     return;
   }
 
@@ -21,7 +23,7 @@ export default function handler(req, res) {
 
   if (!breed) {
     res.statusCode = 404;
-    res.end(JSON.stringify({error: 'Breed not found.'}));
+    res.end(JSON.stringify({ error: 'Breed not found.' }));
     return;
   }
 

@@ -1,6 +1,6 @@
 
 import breeds from '../data/breeds';
-import {searchByBreedName} from '../utils/search';
+import { searchByBreedName } from '../utils/search';
 
 describe('Search API', () => {
   it('searchByBreedName, empty', () => {
