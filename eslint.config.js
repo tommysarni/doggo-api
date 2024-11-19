@@ -1,0 +1,60 @@
+import globals from 'globals';
+import stylisticJs from '@stylistic/eslint-plugin-js';
+
+export default [
+  {
+    languageOptions: {
+      ecmaVersion: 2021,
+      sourceType: 'module',
+      globals: {
+        ...globals.node,
+        ...globals.jest,
+      },
+    },
+    plugins: { '@stylistic/js': stylisticJs },
+    files: ['**/*.js', '**/*.mjs'],
+    rules: {
+      semi: ['error', 'always'],
+      '@stylistic/js/indent': ['error', 2],
+      '@stylistic/js/quotes': [
+        'error',
+        'single',
+        { avoidEscape: true, allowTemplateLiterals: true },
+      ],
+      '@stylistic/js/space-before-function-paren': ['error', { 'anonymous': 'always', 'named': 'never', 'asyncArrow': 'always' }],
+      '@stylistic/js/spaced-comment': ['error', 'always', { 'exceptions': ['-'] }],
+      '@stylistic/js/key-spacing': ['error', { 'beforeColon': false, 'afterColon': true }],
+      '@stylistic/js/array-element-newline': ['error', 'consistent'],
+      'padding-line-between-statements': [
+        'error',
+        { blankLine: 'always', prev: ['const', 'let', 'var'], next: '*' },
+        { blankLine: 'any', prev: ['const', 'let', 'var'], next: ['const', 'let', 'var'] },
+        { blankLine: 'always', prev: ['multiline-block-like'], next: ['*'] },
+        { blankLine: 'always', prev: ['block-like'], next: ['*'] },
+        { blankLine: 'always', prev: ['block'], next: ['*'] },
+        { blankLine: 'always', prev: ['function'], next: ['*'] },
+      ],
+      '@stylistic/js/object-curly-newline': ['error', { 'multiline': true }],
+      '@stylistic/js/function-call-argument-newline': ['error', 'never'],
+      '@stylistic/js/arrow-spacing': 'error',
+      '@stylistic/js/block-spacing': 'error',
+      '@stylistic/js/comma-spacing': 'error',
+      '@stylistic/js/computed-property-spacing': 'error',
+      '@stylistic/js/function-call-spacing': 'error',
+      '@stylistic/js/array-bracket-newline': ['error', 'consistent'],
+      '@stylistic/js/brace-style': 'error',
+      '@stylistic/js/no-extra-parens': ['error', 'all', { 'nestedBinaryExpressions': false, 'ternaryOperandBinaryExpressions': false, 'ignoreJSX': 'all' }],
+      '@stylistic/js/comma-dangle': ['error', 'always-multiline'],
+      '@stylistic/js/padded-blocks': ['error', 'never'],
+      'no-console': 'off',
+      'no-unused-vars': 'error',
+      'no-undef': 'error',
+      'no-redeclare': 'error',
+      'no-const-assign': 'error',
+      eqeqeq: 'error',
+      'no-eval': 'error',
+      'no-implied-eval': 'error',
+    },
+    ignores: ['node_modules/', 'coverage/', 'dist/', 'build/', '*.log', 'package-lock.json'],
+  },
+];
