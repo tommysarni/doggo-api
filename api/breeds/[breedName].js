@@ -9,9 +9,10 @@ export default function handler(req, res) {
   }
 
   const { url = '' } = req || {};
-  const [, breedName] = url.split('breeds/');
+  const [, slug = ''] = url.split('breeds/');
+  const [breedName] = slug.split('?') || [];
 
-  console.log({ request: req, method: req.method, url, breedName });
+  console.log({ url, slug, breedName });
 
   if (!breedName) {
     res.statusCode = 400;
