@@ -1,6 +1,9 @@
 import { createServer } from 'http';
 import request from 'supertest';
 import handler from '../api/v1/breeds/[breedName].js';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const createTestServer = (routeHandler) => {
   return createServer((req, res) => {
@@ -9,10 +12,12 @@ const createTestServer = (routeHandler) => {
 };
 
 describe('Breed Search API', () => {
+  const secret = process.env.JWT_SECRET;
   it('should return 200 with Beagle', async () => {
     const server = createTestServer(handler);
     const res = await request(server)
-      .get('/api/breeds/beagle');
+      .get('/api/v1/breeds/beagle')
+      .set('x-api-key', secret);
 
     const json = JSON.parse(res.text);
 
@@ -23,7 +28,8 @@ describe('Breed Search API', () => {
   it('should return 200 with Lowchen', async () => {
     const server = createTestServer(handler);
     const res = await request(server)
-      .get('/api/breeds/L%F6wchen');
+      .get('/api/v1/breeds/L%F6wchen')
+      .set('x-api-key', secret);
 
     const json = JSON.parse(res.text);
 
@@ -34,7 +40,8 @@ describe('Breed Search API', () => {
   it('should return 200 with Saluki', async () => {
     const server = createTestServer(handler);
     const res = await request(server)
-      .get('/api/breeds/saluki');
+      .get('/api/v1/breeds/saluki')
+      .set('x-api-key', secret);
 
     const json = JSON.parse(res.text);
 
@@ -47,7 +54,8 @@ describe('Breed Search API', () => {
   it('should return 200 with Flat-Coated Retriever', async () => {
     const server = createTestServer(handler);
     const res = await request(server)
-      .get('/api/breeds/flat-coated-retriever');
+      .get('/api/v1/breeds/flat-coated-retriever')
+      .set('x-api-key', secret);
 
     const json = JSON.parse(res.text);
 
@@ -60,7 +68,7 @@ describe('Breed Search API', () => {
   it('Should Error No Breed Name', async () => {
     const server = createTestServer(handler);
 
-    const res = await request(server).get('/api/breeds');
+    const res = await request(server).get('/api/v1/breeds').set('x-api-key', secret);
 
     const json = JSON.parse(res.text);
 
@@ -70,7 +78,7 @@ describe('Breed Search API', () => {
   it('Should Error - No Breed named bagel', async () => {
     const server = createTestServer(handler);
 
-    const res = await request(server).get('/api/breeds/bagel');
+    const res = await request(server).get('/api/breeds/bagel').set('x-api-key', secret);
 
     const json = JSON.parse(res.text);
 
