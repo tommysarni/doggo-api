@@ -13,6 +13,7 @@ const createTestServer = (routeHandler) => {
 
 describe('Breed Search API', () => {
   const secret = process.env.JWT_SECRET;
+
   it('should return 200 with Beagle', async () => {
     const server = createTestServer(handler);
     const res = await request(server)

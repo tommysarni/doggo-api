@@ -4,8 +4,6 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 export default function handler(req, res) {
-  console.log('Headers:', req.headers);
-  console.log('Body:', req.body);
   if (req.method !== 'POST') {
     res.statusCode = 405;
     res.end(JSON.stringify({ error: 'Method not allowed.' }));
