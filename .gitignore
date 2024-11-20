@@ -35,3 +35,4 @@ dist/
 
 # Jest cache
 jest-cache/
+.vercel

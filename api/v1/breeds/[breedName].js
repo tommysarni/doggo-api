@@ -8,6 +8,20 @@ export default function handler(req, res) {
     return;
   }
 
+  const apiKey = req.headers['x-api-key'];
+
+  if (!apiKey) {
+    res.statusCode = 401;
+    res.end(JSON.stringify({ error: 'API key is missing.' }));
+    return;
+  }
+
+  if (apiKey !== process.env.JWT_SECRET) {
+    res.statusCode = 403;
+    res.end(JSON.stringify({ error: 'Invalid API key.' }));
+    return;
+  }
+
   const { url = '' } = req || {};
   const [, slug = ''] = url.split('breeds/');
   const [breedName] = slug.split('?') || [];
