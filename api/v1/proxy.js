@@ -39,7 +39,13 @@ export default async function handler(req, res) {
       body: method === 'POST' || method === 'PUT' ? req.body : undefined,
     };
 
-    const response = await fetch(`http://localhost:3000/api/${path}`, options);
+    const baseURL = {
+      prod: process.env.ENDPOINT,
+      dev: process.env.ENDPOINT_TEST,
+      local: 'http://localhost:3000',
+    }[process.env.env] || 'http://localhost:3000';
+
+    const response = await fetch(`${baseURL}/api/${path}`, options);
     const data = await response.json();
 
     res.statusCode = response.status;
