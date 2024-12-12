@@ -4118,7 +4118,7 @@ export default [
     lifespan: '12-14',
   },
   {
-    breed: 'L%F6wchen',
+    breed: 'Lowchen',
     group: 'non-sporting',
     goodWithChildren: '5',
     energy: '4',
