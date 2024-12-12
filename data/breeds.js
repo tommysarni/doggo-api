@@ -1336,7 +1336,7 @@ export default [
     lifespan: '11-14',
   },
   {
-    breed: 'Plott',
+    breed: 'Plott Hound',
     group: 'hound',
     goodWithChildren: '3',
     energy: '3',
@@ -3071,7 +3071,7 @@ export default [
     lifespan: '11-13',
   },
   {
-    breed: 'Skye Terrrier',
+    breed: 'Skye Terrier',
     group: 'terrier',
     goodWithChildren: '3',
     energy: '2',
@@ -3183,7 +3183,7 @@ export default [
     lifespan: '12-14',
   },
   {
-    breed: 'West. Highland White Terrier',
+    breed: 'West Highland White Terrier',
     group: 'terrier',
     goodWithChildren: '5',
     energy: '4',
@@ -4477,7 +4477,7 @@ export default [
     lifespan: '10-12',
   },
   {
-    breed: 'Belgium Sheepdog',
+    breed: 'Belgian Sheepdog',
     group: 'non-sporting',
     goodWithChildren: '3',
     energy: '4',
