@@ -29,13 +29,14 @@ describe('Breed Search API', () => {
   it('should return 200 with Lowchen', async () => {
     const server = createTestServer(handler);
     const res = await request(server)
-      .get('/api/v1/breeds/L%F6wchen')
+      .get('/api/v1/breeds/lowchen')
       .set('x-api-key', secret);
 
     const json = JSON.parse(res.text);
 
     expect(res.statusCode).toBe(200);
-    expect(json.breed).toEqual('L%F6wchen');
+    expect(json.breed).toEqual('L%C3%B6wchen');
+    expect(json.slug).toEqual('lowchen');
   });
 
   it('should return 200 with Saluki', async () => {
