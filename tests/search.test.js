@@ -20,9 +20,10 @@ describe('Search API', () => {
     expect(actual.breed).toEqual('Flat-Coated Retriever');
   });
 
-  it('searchByBreedName, L%F6wchen', () => {
-    const actual = searchByBreedName('L%F6wchen', breeds);
+  it('searchByBreedName, Lowchen', () => {
+    const actual = searchByBreedName('Lowchen', breeds);
 
-    expect(actual.breed).toEqual('L%F6wchen');
+    expect(actual.breed).toEqual('L%C3%B6wchen');
+    expect(actual.slug).toEqual('lowchen');
   });
 });
