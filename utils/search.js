@@ -6,5 +6,8 @@ const searchByBreedName = (name, data) => {
   return found;
 };
 
+const getBreedList = (data) => {
+  return data.map(({ slug, breed }) => ({ slug, breed }));
+};
 
-export { searchByBreedName };
+export { searchByBreedName, getBreedList };
