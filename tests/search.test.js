@@ -1,6 +1,6 @@
 
 import breeds from '../data/breeds';
-import { searchByBreedName } from '../utils/search';
+import { searchByBreedName, getBreedList } from '../utils/search';
 
 describe('Search API', () => {
   it('searchByBreedName, empty', () => {
@@ -25,5 +25,17 @@ describe('Search API', () => {
 
     expect(actual.breed).toEqual('L%C3%B6wchen');
     expect(actual.slug).toEqual('lowchen');
+  });
+
+  it('getBreedList', () => {
+    const list = getBreedList(breeds);
+    const [first] = list;
+    const last = list[list.length - 1];
+
+    expect(first.breed).toEqual('Brittany');
+    expect(first.slug).toEqual('brittany');
+    expect(last.breed).toEqual('Pembroke Welsh Corgi');
+    expect(last.slug).toEqual('pembroke-welsh-corgi');
+    expect(list.length).toEqual(186);
   });
 });

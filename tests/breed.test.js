@@ -1,6 +1,7 @@
 import { createServer } from 'http';
 import request from 'supertest';
 import handler from '../api/v1/breeds/[breedName].js';
+import listHandler from '../api/v1/breedList.js';
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -97,5 +98,16 @@ describe('Breed Search API', () => {
 
     expect(res.statusCode).toBe(400);
     expect(json.error).toEqual('Wrong request method.');
+  });
+
+  it('should return 200 for getBreedList', async () => {
+    const server = createTestServer(listHandler);
+    const res = await request(server).get('/v1/breedList').set('x-api-key', secret);
+    const json = JSON.parse(res.text);
+
+    expect(res.statusCode).toBe(200);
+    expect(json.length).toEqual(186);
+    expect(json[0].slug).toEqual('brittany');
+    expect(json[0].breed).toEqual('Brittany');
   });
 });
