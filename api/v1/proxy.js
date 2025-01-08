@@ -45,7 +45,7 @@ export default async function handler(req, res) {
     const options = {
       method: method,
       headers: { 'x-api-key': secret },
-      body: method === 'POST' || method === 'PUT' ? req.body : undefined,
+      body: method === 'POST' || method === 'PUT' ? JSON.stringify(req.body) : undefined,
     };
 
     const baseURL = {

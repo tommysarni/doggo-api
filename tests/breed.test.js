@@ -2,6 +2,7 @@ import { createServer } from 'http';
 import request from 'supertest';
 import handler from '../api/v1/breeds/[breedName].js';
 import listHandler from '../api/v1/breedList.js';
+import filterHandler from '../api/v1/selectedBreeds.js';
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -109,5 +110,20 @@ describe('Breed Search API', () => {
     expect(json.length).toEqual(186);
     expect(json[0].slug).toEqual('brittany');
     expect(json[0].breed).toEqual('Brittany');
+  });
+
+  it('should return 200 for getSelectedBreeds', async () => {
+    const server = createTestServer(filterHandler);
+    const res = await request(server)
+      .post('/v1/selectedBreeds')
+      .send({ goodWithChildren: '4-5', energy: '1' })
+      .set('x-api-key', secret);
+
+    const json = JSON.parse(res.text);
+
+    expect(res.statusCode).toBe(200);
+    expect(json.length).toEqual(2);
+    expect(json[0].slug).toEqual('mastiff');
+    expect(json[0].breed).toEqual('Mastiff');
   });
 });
