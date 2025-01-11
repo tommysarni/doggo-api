@@ -1,4 +1,4 @@
-import { getQuizBreeds, getQuizEffects, getQuizScoreForBreed, getEffectsSummary, getEffectAnalysis } from './quiz';
+import { getQuizBreeds, getQuizEffects, getQuizScoreForBreed, getEffectsSummary, getEffectAnalysis } from './quiz.js';
 
 const toLightWeightData = (b) => {
   const { breed, slug, group } = b;
@@ -85,7 +85,7 @@ const searchBreedByQuizResults = (settings) => {
 
   if (!sortedScores.length) return { scores: []};
 
-  const analysis = getEffectAnalysis(summary, sortedScores[2]);
+  const analysis = getEffectAnalysis(summary, sortedScores[0]);
 
   sortedScores = sortedScores.map(toLightWeightData);
   return { scores: sortedScores, analysis };
