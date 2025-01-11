@@ -130,7 +130,12 @@ describe('Search API', () => {
       era: 'neutral',
     };
 
-    const result = searchBreedByQuizResults(sampleAnswers, QUIZ, breeds);
+    const settings = {
+      quizAnswers: sampleAnswers,
+      quiz: QUIZ,
+      data: breeds,
+    };
+    const result = searchBreedByQuizResults(settings);
 
     expect(result).toBeDefined();
   });

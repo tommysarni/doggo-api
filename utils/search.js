@@ -71,7 +71,8 @@ const filterBreeds = (filterObj, data) => {
 };
 
 
-const searchBreedByQuizResults = (quizAnswers, quiz, data, options = { limit: 5 }) => {
+const searchBreedByQuizResults = (settings) => {
+  const { quizAnswers, quiz, data, options = { limit: 5 } } = settings;
   const effects = getQuizEffects(quizAnswers, quiz);
 
   const summary = getEffectsSummary(effects);
