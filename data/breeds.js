@@ -30,6 +30,13 @@ export default [
     'femaleHeightInCm': '44-52',
     'maleWeightInKgs': '13-18',
     'femaleWeightInKgs': '13-18',
+    vibes: {
+      coolness: '4',
+      beauty: '3',
+      cuteness: '4',
+      cleverness: '4',
+      toughness: '3',
+    },
   },
   {
     'slug': 'english-pointer',
@@ -62,6 +69,13 @@ export default [
     'femaleHeightInCm': '58-66',
     'maleWeightInKgs': '24-34',
     'femaleWeightInKgs': '20-29',
+    vibes: {
+      coolness: '4',
+      beauty: '2',
+      cuteness: '2',
+      cleverness: '3',
+      toughness: '4',
+    },
   },
   {
     'slug': 'german-shorthaired-pointer',
@@ -94,6 +108,13 @@ export default [
     'femaleHeightInCm': '53-58',
     'maleWeightInKgs': '24-31',
     'femaleWeightInKgs': '20-27',
+    vibes: {
+      coolness: '4',
+      beauty: '3',
+      cuteness: '3',
+      cleverness: '5',
+      toughness: '4',
+    },
   },
   {
     'slug': 'chesapeake-bay-retriever',
@@ -126,6 +147,13 @@ export default [
     'femaleHeightInCm': '53-60',
     'maleWeightInKgs': '29-36',
     'femaleWeightInKgs': '24-31',
+    vibes: {
+      coolness: '3',
+      beauty: '3',
+      cuteness: '2',
+      cleverness: '4',
+      toughness: '5',
+    },
   },
   {
     'slug': 'curly-coated-retriever',
@@ -158,6 +186,13 @@ export default [
     'femaleHeightInCm': '58-63',
     'maleWeightInKgs': '27-31',
     'femaleWeightInKgs': '27-31',
+    vibes: {
+      coolness: '4',
+      beauty: '4',
+      cuteness: '3',
+      cleverness: '4',
+      toughness: '3',
+    },
   },
   {
     'slug': 'flat-coated-retriever',
@@ -190,6 +225,13 @@ export default [
     'femaleHeightInCm': '55-59',
     'maleWeightInKgs': '27-31',
     'femaleWeightInKgs': '27-31',
+    vibes: {
+      coolness: '3',
+      beauty: '4',
+      cuteness: '4',
+      cleverness: '3',
+      toughness: '2',
+    },
   },
   {
     'slug': 'golden-retriever',
@@ -222,6 +264,13 @@ export default [
     'femaleHeightInCm': '54-57',
     'maleWeightInKgs': '29-34',
     'femaleWeightInKgs': '24-29',
+    vibes: {
+      coolness: '2',
+      beauty: '3',
+      cuteness: '5',
+      cleverness: '4',
+      toughness: '2',
+    },
   },
   {
     'slug': 'labrador-retriever',
@@ -254,6 +303,13 @@ export default [
     'femaleHeightInCm': '54-59',
     'maleWeightInKgs': '29-36',
     'femaleWeightInKgs': '24-31',
+    vibes: {
+      coolness: '3',
+      beauty: '3',
+      cuteness: '4',
+      cleverness: '4',
+      toughness: '3',
+    },
   },
   {
     'slug': 'nova-scotia-duck-tolling-retriever',
@@ -286,6 +342,13 @@ export default [
     'femaleHeightInCm': '43-50',
     'maleWeightInKgs': '20-23',
     'femaleWeightInKgs': '15-19',
+    vibes: {
+      coolness: '3',
+      beauty: '4',
+      cuteness: '4',
+      cleverness: '5',
+      toughness: '2',
+    },
   },
   {
     'slug': 'english-setter',
@@ -318,6 +381,13 @@ export default [
     'femaleHeightInCm': '60',
     'maleWeightInKgs': '27-29',
     'femaleWeightInKgs': '22-24',
+    vibes: {
+      coolness: '2',
+      beauty: '4',
+      cuteness: '3',
+      cleverness: '4',
+      toughness: '3',
+    },
   },
   {
     'slug': 'gordon-setter',
@@ -350,6 +420,13 @@ export default [
     'femaleHeightInCm': '58-66',
     'maleWeightInKgs': '24-36',
     'femaleWeightInKgs': '20-31',
+    vibes: {
+      coolness: '2',
+      beauty: '4',
+      cuteness: '3',
+      cleverness: '4',
+      toughness: '3',
+    },
   },
   {
     'slug': 'irish-red-and-white-setter',
@@ -382,6 +459,13 @@ export default [
     'femaleHeightInCm': '57-60',
     'maleWeightInKgs': '22-34',
     'femaleWeightInKgs': '22-34',
+    vibes: {
+      coolness: '3',
+      beauty: '4',
+      cuteness: '4',
+      cleverness: '4',
+      toughness: '3',
+    },
   },
   {
     'slug': 'irish-setter',
@@ -414,6 +498,13 @@ export default [
     'femaleHeightInCm': '63',
     'maleWeightInKgs': '31',
     'femaleWeightInKgs': '27',
+    vibes: {
+      coolness: '3',
+      beauty: '5',
+      cuteness: '4',
+      cleverness: '4',
+      toughness: '3',
+    },
   },
   {
     'slug': 'american-water-spaniel',
@@ -446,6 +537,13 @@ export default [
     'femaleHeightInCm': '38-45',
     'maleWeightInKgs': '13-20',
     'femaleWeightInKgs': '11-18',
+    vibes: {
+      coolness: '2',
+      beauty: '5',
+      cuteness: '3',
+      cleverness: '4',
+      toughness: '4',
+    },
   },
   {
     'slug': 'boykin-spaniel',
@@ -478,6 +576,13 @@ export default [
     'femaleHeightInCm': '35-41',
     'maleWeightInKgs': '13-18',
     'femaleWeightInKgs': '11-15',
+    vibes: {
+      coolness: '2',
+      beauty: '3',
+      cuteness: '4',
+      cleverness: '4',
+      toughness: '4',
+    },
   },
   {
     'slug': 'clumber-spaniel',
@@ -510,6 +615,13 @@ export default [
     'femaleHeightInCm': '43-48',
     'maleWeightInKgs': '31-38',
     'femaleWeightInKgs': '24-31',
+    vibes: {
+      coolness: '2',
+      beauty: '4',
+      cuteness: '4',
+      cleverness: '3',
+      toughness: '3',
+    },
   },
   {
     'slug': 'cocker-spaniel',
@@ -542,6 +654,13 @@ export default [
     'femaleHeightInCm': '34-36',
     'maleWeightInKgs': '10-12',
     'femaleWeightInKgs': '10-12',
+    vibes: {
+      coolness: '2',
+      beauty: '5',
+      cuteness: '5',
+      cleverness: '4',
+      toughness: '2',
+    },
   },
   {
     'slug': 'english-cocker-spaniel',
@@ -574,6 +693,13 @@ export default [
     'femaleHeightInCm': '38-40',
     'maleWeightInKgs': '12-15',
     'femaleWeightInKgs': '11-14',
+    vibes: {
+      coolness: '2',
+      beauty: '4',
+      cuteness: '5',
+      cleverness: '4',
+      toughness: '2',
+    },
   },
   {
     'slug': 'english-springer-spaniel',
@@ -606,6 +732,13 @@ export default [
     'femaleHeightInCm': '45-50',
     'maleWeightInKgs': '22',
     'femaleWeightInKgs': '18',
+    vibes: {
+      coolness: '3',
+      beauty: '3',
+      cuteness: '4',
+      cleverness: '4',
+      toughness: '4',
+    },
   },
   {
     'slug': 'field-spaniel',
@@ -638,6 +771,13 @@ export default [
     'femaleHeightInCm': '43',
     'maleWeightInKgs': '15-22',
     'femaleWeightInKgs': '15-22',
+    vibes: {
+      coolness: '2',
+      beauty: '5',
+      cuteness: '4',
+      cleverness: '4',
+      toughness: '2',
+    },
   },
   {
     'slug': 'irish-water-spaniel',
@@ -670,6 +810,13 @@ export default [
     'femaleHeightInCm': '53-58',
     'maleWeightInKgs': '24-29',
     'femaleWeightInKgs': '20-26',
+    vibes: {
+      coolness: '5',
+      beauty: '4',
+      cuteness: '3',
+      cleverness: '4',
+      toughness: '3',
+    },
   },
   {
     'slug': 'sussex-spaniel',
@@ -702,6 +849,13 @@ export default [
     'femaleHeightInCm': '33-38',
     'maleWeightInKgs': '15-20',
     'femaleWeightInKgs': '15-20',
+    vibes: {
+      coolness: '2',
+      beauty: '3',
+      cuteness: '4',
+      cleverness: '3',
+      toughness: '3',
+    },
   },
   {
     'slug': 'welsh-springer-spaniel',
@@ -798,6 +952,13 @@ export default [
     'femaleHeightInCm': '53-58',
     'maleWeightInKgs': '20-29',
     'femaleWeightInKgs': '20-29',
+    vibes: {
+      coolness: '4',
+      beauty: '4',
+      cuteness: '4',
+      cleverness: '4',
+      toughness: '3',
+    },
   },
   {
     'slug': 'weimaraner',
@@ -830,6 +991,13 @@ export default [
     'femaleHeightInCm': '58-63',
     'maleWeightInKgs': '24-40',
     'femaleWeightInKgs': '24-40',
+    vibes: {
+      coolness: '4',
+      beauty: '5',
+      cuteness: '3',
+      cleverness: '4',
+      toughness: '4',
+    },
   },
   {
     'slug': 'wirehaired-pointing-griffon',
@@ -926,6 +1094,13 @@ export default [
     'femaleHeightInCm': '63',
     'maleWeightInKgs': '27',
     'femaleWeightInKgs': '22',
+    vibes: {
+      coolness: '5',
+      beauty: '5',
+      cuteness: '2',
+      cleverness: '3',
+      toughness: '4',
+    },
   },
   {
     'slug': 'american-english-coonhound',
@@ -1022,6 +1197,13 @@ export default [
     'femaleHeightInCm': '35',
     'maleWeightInKgs': '18-27',
     'femaleWeightInKgs': '18-27',
+    vibes: {
+      coolness: '3',
+      beauty: '3',
+      cuteness: '5',
+      cleverness: '4',
+      toughness: '3',
+    },
   },
   {
     'slug': 'beagle',
@@ -1054,6 +1236,13 @@ export default [
     'femaleHeightInCm': '33-38',
     'maleWeightInKgs': '8-13',
     'femaleWeightInKgs': '8-13',
+    vibes: {
+      coolness: '3',
+      beauty: '3',
+      cuteness: '5',
+      cleverness: '3',
+      toughness: '3',
+    },
   },
   {
     'slug': 'black-and-tan-coonhound',
@@ -1182,6 +1371,13 @@ export default [
     'femaleHeightInCm': '66-71',
     'maleWeightInKgs': '34-47',
     'femaleWeightInKgs': '27-38',
+    vibes: {
+      coolness: '4',
+      beauty: '5',
+      cuteness: '2',
+      cleverness: '4',
+      toughness: '3',
+    },
   },
   {
     'slug': 'cirneco-dell-etna',
@@ -1246,6 +1442,13 @@ export default [
     'femaleHeightInCm': '40-81',
     'maleWeightInKgs': '4',
     'femaleWeightInKgs': '7-14',
+    vibes: {
+      coolness: '3',
+      beauty: '3',
+      cuteness: '5',
+      cleverness: '3',
+      toughness: '3',
+    },
   },
   {
     'slug': 'american-foxhound',
@@ -1438,6 +1641,13 @@ export default [
     'femaleHeightInCm': '76',
     'maleWeightInKgs': '54',
     'femaleWeightInKgs': '47',
+    vibes: {
+      coolness: '5',
+      beauty: '4',
+      cuteness: '3',
+      cleverness: '4',
+      toughness: '5',
+    },
   },
   {
     'slug': 'norwegian-elkhound',
@@ -1694,6 +1904,13 @@ export default [
     'femaleHeightInCm': '60-66',
     'maleWeightInKgs': '38',
     'femaleWeightInKgs': '31',
+    vibes: {
+      coolness: '5',
+      beauty: '4',
+      cuteness: '3',
+      cleverness: '4',
+      toughness: '5',
+    },
   },
   {
     'slug': 'saluki',
@@ -1726,6 +1943,13 @@ export default [
     'femaleHeightInCm': '55-68',
     'maleWeightInKgs': '15-29',
     'femaleWeightInKgs': '15-29',
+    vibes: {
+      coolness: '5',
+      beauty: '5',
+      cuteness: '2',
+      cleverness: '3',
+      toughness: '3',
+    },
   },
   {
     'slug': 'scottish-deerhound',
@@ -1950,6 +2174,13 @@ export default [
     'femaleHeightInCm': '58-66',
     'maleWeightInKgs': '40-54',
     'femaleWeightInKgs': '31-45',
+    vibes: {
+      coolness: '4',
+      beauty: '5',
+      cuteness: '4',
+      cleverness: '3',
+      toughness: '5',
+    },
   },
   {
     'slug': 'black-russian-terrier',
@@ -2046,6 +2277,13 @@ export default [
     'femaleHeightInCm': '53-59',
     'maleWeightInKgs': '29-36',
     'femaleWeightInKgs': '22-29',
+    vibes: {
+      coolness: '4',
+      beauty: '2',
+      cuteness: '3',
+      cleverness: '4',
+      toughness: '5',
+    },
   },
   {
     'slug': 'bullmastiff',
@@ -2110,6 +2348,13 @@ export default [
     'femaleHeightInCm': '59-66',
     'maleWeightInKgs': '40-58',
     'femaleWeightInKgs': '40-58',
+    vibes: {
+      coolness: '4',
+      beauty: '3',
+      cuteness: '3',
+      cleverness: '4',
+      toughness: '5',
+    },
   },
   {
     'slug': 'chinook',
@@ -2174,6 +2419,13 @@ export default [
     'femaleHeightInCm': '60-66',
     'maleWeightInKgs': '29-40',
     'femaleWeightInKgs': '29-40',
+    vibes: {
+      coolness: '5',
+      beauty: '4',
+      cuteness: '2',
+      cleverness: '5',
+      toughness: '4',
+    },
   },
   {
     'slug': 'dogue-de-bordeaux',
@@ -2302,6 +2554,13 @@ export default [
     'femaleHeightInCm': '78-83',
     'maleWeightInKgs': '58-81',
     'femaleWeightInKgs': '49-68',
+    vibes: {
+      coolness: '5',
+      beauty: '4',
+      cuteness: '3',
+      cleverness: '3',
+      toughness: '5',
+    },
   },
   {
     'slug': 'great-pyrenees',
@@ -2334,6 +2593,13 @@ export default [
     'femaleHeightInCm': '63-73',
     'maleWeightInKgs': '52',
     'femaleWeightInKgs': '38-40',
+    vibes: {
+      coolness: '4',
+      beauty: '5',
+      cuteness: '3',
+      cleverness: '3',
+      toughness: '5',
+    },
   },
   {
     'slug': 'greater-swiss-mountain-dog',
@@ -2494,6 +2760,13 @@ export default [
     'femaleHeightInCm': '69',
     'maleWeightInKgs': '79-86',
     'femaleWeightInKgs': '79-86',
+    vibes: {
+      coolness: '5',
+      beauty: '2',
+      cuteness: '4',
+      cleverness: '3',
+      toughness: '5',
+    },
   },
   {
     'slug': 'neapolitan-mastiff',
@@ -2558,6 +2831,13 @@ export default [
     'femaleHeightInCm': '66',
     'maleWeightInKgs': '58-68',
     'femaleWeightInKgs': '45-54',
+    vibes: {
+      coolness: '3',
+      beauty: '5',
+      cuteness: '5',
+      cleverness: '3',
+      toughness: '4',
+    },
   },
   {
     'slug': 'portuguese-water-dog',
@@ -2590,6 +2870,13 @@ export default [
     'femaleHeightInCm': '43-53',
     'maleWeightInKgs': '19-27',
     'femaleWeightInKgs': '15-22',
+    vibes: {
+      coolness: '4',
+      beauty: '3',
+      cuteness: '3',
+      cleverness: '5',
+      toughness: '4',
+    },
   },
   {
     'slug': 'rottweiler',
@@ -2622,6 +2909,13 @@ export default [
     'femaleHeightInCm': '55-63',
     'maleWeightInKgs': '38-61',
     'femaleWeightInKgs': '36-45',
+    vibes: {
+      coolness: '5',
+      beauty: '2',
+      cuteness: '3',
+      cleverness: '4',
+      toughness: '5',
+    },
   },
   {
     'slug': 'saint-bernard',
@@ -2654,6 +2948,13 @@ export default [
     'femaleHeightInCm': '64',
     'maleWeightInKgs': '54-90',
     'femaleWeightInKgs': '54-90',
+    vibes: {
+      coolness: '4',
+      beauty: '4',
+      cuteness: '3',
+      cleverness: '4',
+      toughness: '5',
+    },
   },
   {
     'slug': 'samoyed',
@@ -2686,6 +2987,13 @@ export default [
     'femaleHeightInCm': '48-53',
     'maleWeightInKgs': '20-29',
     'femaleWeightInKgs': '15-22',
+    vibes: {
+      coolness: '3',
+      beauty: '5',
+      cuteness: '5',
+      cleverness: '4',
+      toughness: '3',
+    },
   },
   {
     'slug': 'siberian-husky',
@@ -2718,6 +3026,13 @@ export default [
     'femaleHeightInCm': '50-55',
     'maleWeightInKgs': '20-27',
     'femaleWeightInKgs': '15-22',
+    vibes: {
+      coolness: '5',
+      beauty: '5',
+      cuteness: '4',
+      cleverness: '4',
+      toughness: '5',
+    },
   },
   {
     'slug': 'standard-schnauzer',
@@ -3358,6 +3673,13 @@ export default [
     'femaleHeightInCm': '30-35',
     'maleWeightInKgs': '5-6',
     'femaleWeightInKgs': '5-6',
+    vibes: {
+      coolness: '2',
+      beauty: '2',
+      cuteness: '5',
+      cleverness: '4',
+      toughness: '3',
+    },
   },
   {
     'slug': 'norfolk-terrier',
@@ -3742,6 +4064,13 @@ export default [
     'femaleHeightInCm': '25',
     'maleWeightInKgs': '6-9',
     'femaleWeightInKgs': '6-9',
+    vibes: {
+      coolness: '4',
+      beauty: '3',
+      cuteness: '5',
+      cleverness: '4',
+      toughness: '2',
+    },
   },
   {
     'slug': 'affenpinscher',
@@ -3838,6 +4167,13 @@ export default [
     'femaleHeightInCm': '30-33',
     'maleWeightInKgs': '5-8',
     'femaleWeightInKgs': '5-8',
+    vibes: {
+      coolness: '3',
+      beauty: '5',
+      cuteness: '5',
+      cleverness: '4',
+      toughness: '2',
+    },
   },
   {
     'slug': 'chihuahua',
@@ -3870,6 +4206,13 @@ export default [
     'femaleHeightInCm': '15-22',
     'maleWeightInKgs': '2',
     'femaleWeightInKgs': '2',
+    vibes: {
+      coolness: '3',
+      beauty: '3',
+      cuteness: '5',
+      cleverness: '3',
+      toughness: '2',
+    },
   },
   {
     'slug': 'chinese-crested-dog',
@@ -3966,6 +4309,13 @@ export default [
     'femaleHeightInCm': '21-29',
     'maleWeightInKgs': '3-5',
     'femaleWeightInKgs': '3-5',
+    vibes: {
+      coolness: '3',
+      beauty: '4',
+      cuteness: '5',
+      cleverness: '4',
+      toughness: '1',
+    },
   },
   {
     'slug': 'italian-greyhound',
@@ -4062,6 +4412,13 @@ export default [
     'femaleHeightInCm': '22-25',
     'maleWeightInKgs': '1-3',
     'femaleWeightInKgs': '1-3',
+    vibes: {
+      coolness: '2',
+      beauty: '5',
+      cuteness: '5',
+      cleverness: '3',
+      toughness: '1',
+    },
   },
   {
     'slug': 'toy-manchester-terrier',
@@ -4158,6 +4515,13 @@ export default [
     'femaleHeightInCm': '20-27',
     'maleWeightInKgs': '1-4',
     'femaleWeightInKgs': '1-4',
+    vibes: {
+      coolness: '2',
+      beauty: '4',
+      cuteness: '4',
+      cleverness: '5',
+      toughness: '2',
+    },
   },
   {
     'slug': 'pekingese',
@@ -4222,6 +4586,13 @@ export default [
     'femaleHeightInCm': '20-27',
     'maleWeightInKgs': '1-3',
     'femaleWeightInKgs': '1-2',
+    vibes: {
+      coolness: '4',
+      beauty: '4',
+      cuteness: '4',
+      cleverness: '3',
+      toughness: '1',
+    },
   },
   {
     'slug': 'toy-poodle',
@@ -4286,6 +4657,13 @@ export default [
     'femaleHeightInCm': '25-27',
     'maleWeightInKgs': '6-8',
     'femaleWeightInKgs': '6-8',
+    vibes: {
+      coolness: '3',
+      beauty: '2',
+      cuteness: '5',
+      cleverness: '3',
+      toughness: '2',
+    },
   },
   {
     'slug': 'shih-tzu',
@@ -4318,6 +4696,13 @@ export default [
     'femaleHeightInCm': '20-27',
     'maleWeightInKgs': '4-7',
     'femaleWeightInKgs': '4-7',
+    vibes: {
+      coolness: '3',
+      beauty: '5',
+      cuteness: '5',
+      cleverness: '3',
+      toughness: '1',
+    },
   },
   {
     'slug': 'silky-terrier',
@@ -4414,6 +4799,13 @@ export default [
     'femaleHeightInCm': '20-22',
     'maleWeightInKgs': '3',
     'femaleWeightInKgs': '3',
+    vibes: {
+      coolness: '3',
+      beauty: '4',
+      cuteness: '5',
+      cleverness: '4',
+      toughness: '2',
+    },
   },
   {
     'slug': 'american-eskimo-dog',
@@ -4478,6 +4870,13 @@ export default [
     'femaleHeightInCm': '24-29',
     'maleWeightInKgs': '4-7',
     'femaleWeightInKgs': '4-6',
+    vibes: {
+      coolness: '2',
+      beauty: '4',
+      cuteness: '5',
+      cleverness: '4',
+      toughness: '2',
+    },
   },
   {
     'slug': 'boston-terrier',
@@ -4510,6 +4909,13 @@ export default [
     'femaleHeightInCm': '38-43',
     'maleWeightInKgs': '4-6',
     'femaleWeightInKgs': '4-6',
+    vibes: {
+      coolness: '3',
+      beauty: '4',
+      cuteness: '4',
+      cleverness: '3',
+      toughness: '2',
+    },
   },
   {
     'slug': 'bulldog',
@@ -4542,6 +4948,13 @@ export default [
     'femaleHeightInCm': '30-38',
     'maleWeightInKgs': '22',
     'femaleWeightInKgs': '18',
+    vibes: {
+      coolness: '3',
+      beauty: '2',
+      cuteness: '4',
+      cleverness: '2',
+      toughness: '4',
+    },
   },
   {
     'slug': 'chinese-shar-pei',
@@ -4670,6 +5083,13 @@ export default [
     'femaleHeightInCm': '48-58',
     'maleWeightInKgs': '18-27',
     'femaleWeightInKgs': '18-27',
+    vibes: {
+      coolness: '5',
+      beauty: '4',
+      cuteness: '3',
+      cleverness: '4',
+      toughness: '4',
+    },
   },
   {
     'slug': 'finnish-spitz',
@@ -4734,6 +5154,13 @@ export default [
     'femaleHeightInCm': '27-33',
     'maleWeightInKgs': '12',
     'femaleWeightInKgs': '12',
+    vibes: {
+      coolness: '4',
+      beauty: '2',
+      cuteness: '4',
+      cleverness: '3',
+      toughness: '1',
+    },
   },
   {
     'slug': 'keeshond',
@@ -4894,6 +5321,13 @@ export default [
     'femaleHeightInCm': '38-55',
     'maleWeightInKgs': '20-29',
     'femaleWeightInKgs': '20-29',
+    vibes: {
+      coolness: '4',
+      beauty: '5',
+      cuteness: '4',
+      cleverness: '5',
+      toughness: '2',
+    },
   },
   {
     'slug': 'schipperke',
@@ -4958,6 +5392,13 @@ export default [
     'femaleHeightInCm': '34-39',
     'maleWeightInKgs': '10',
     'femaleWeightInKgs': '7',
+    vibes: {
+      coolness: '4',
+      beauty: '4',
+      cuteness: '3',
+      cleverness: '4',
+      toughness: '3',
+    },
   },
   {
     'slug': 'tibetan-spaniel',
@@ -5118,6 +5559,13 @@ export default [
     'femaleHeightInCm': '45-53',
     'maleWeightInKgs': '24-29',
     'femaleWeightInKgs': '18-24',
+    vibes: {
+      coolness: '5',
+      beauty: '4',
+      cuteness: '3',
+      cleverness: '4',
+      toughness: '4',
+    },
   },
   {
     'slug': 'bearded-collie',
@@ -5214,6 +5662,13 @@ export default [
     'femaleHeightInCm': '55-60',
     'maleWeightInKgs': '27-29',
     'femaleWeightInKgs': '27-29',
+    vibes: {
+      coolness: '5',
+      beauty: '3',
+      cuteness: '3',
+      cleverness: '5',
+      toughness: '5',
+    },
   },
   {
     'slug': 'belgian-sheepdog',
@@ -5374,6 +5829,13 @@ export default [
     'femaleHeightInCm': '71-53',
     'maleWeightInKgs': '13-20',
     'femaleWeightInKgs': '13-20',
+    vibes: {
+      coolness: '4',
+      beauty: '3',
+      cuteness: '4',
+      cleverness: '5',
+      toughness: '4',
+    },
   },
   {
     'slug': 'bouvier-des-flandres',
@@ -5502,6 +5964,13 @@ export default [
     'femaleHeightInCm': '55-60',
     'maleWeightInKgs': '27-34',
     'femaleWeightInKgs': '22-29',
+    vibes: {
+      coolness: '3',
+      beauty: '5',
+      cuteness: '4',
+      cleverness: '5',
+      toughness: '3',
+    },
   },
   {
     'slug': 'entlebucher-mountain-dog',
@@ -5598,6 +6067,13 @@ export default [
     'femaleHeightInCm': '55-60',
     'maleWeightInKgs': '34-43',
     'femaleWeightInKgs': '34-43',
+    vibes: {
+      coolness: '4',
+      beauty: '3',
+      cuteness: '3',
+      cleverness: '5',
+      toughness: '5',
+    },
   },
   {
     'slug': 'icelandic-sheepdog',
@@ -5822,6 +6298,13 @@ export default [
     'femaleHeightInCm': '33-40',
     'maleWeightInKgs': '9',
     'femaleWeightInKgs': '9',
+    vibes: {
+      coolness: '3',
+      beauty: '4',
+      cuteness: '4',
+      cleverness: '5',
+      toughness: '3',
+    },
   },
   {
     'slug': 'spanish-water-dog',
@@ -5950,5 +6433,12 @@ export default [
     'femaleHeightInCm': '25-30',
     'maleWeightInKgs': '12',
     'femaleWeightInKgs': '11',
+    vibes: {
+      coolness: '3',
+      beauty: '3',
+      cuteness: '5',
+      cleverness: '4',
+      toughness: '3',
+    },
   },
 ];
