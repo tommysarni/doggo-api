@@ -4,7 +4,7 @@ import stylisticJs from '@stylistic/eslint-plugin-js';
 export default [
   {
     languageOptions: {
-      ecmaVersion: 2021,
+      ecmaVersion: 'latest',
       sourceType: 'module',
       globals: {
         ...globals.node,
@@ -23,7 +23,7 @@ export default [
       ],
       '@stylistic/js/space-before-function-paren': ['error', { 'anonymous': 'always', 'named': 'never', 'asyncArrow': 'always' }],
       '@stylistic/js/spaced-comment': ['error', 'always', { 'exceptions': ['-']}],
-      '@stylistic/js/key-spacing': ['error', { 'beforeColon': false, 'afterColon': true }],
+      '@stylistic/js/key-spacing': ['error', { 'mode': 'strict', 'afterColon': true }],
       '@stylistic/js/array-element-newline': ['error', 'consistent'],
       'padding-line-between-statements': [
         'error',
@@ -34,7 +34,7 @@ export default [
         { blankLine: 'always', prev: ['block'], next: ['*']},
         { blankLine: 'always', prev: ['function'], next: ['*']},
       ],
-      '@stylistic/js/object-curly-newline': ['error', { 'multiline': true }],
+      '@stylistic/js/object-curly-newline': ['error', { 'multiline': true  }],
       '@stylistic/js/function-call-argument-newline': ['error', 'never'],
       '@stylistic/js/arrow-spacing': 'error',
       '@stylistic/js/block-spacing': 'error',
@@ -46,7 +46,8 @@ export default [
       '@stylistic/js/no-extra-parens': ['error', 'all', { 'nestedBinaryExpressions': false, 'ternaryOperandBinaryExpressions': false, 'ignoreJSX': 'all' }],
       '@stylistic/js/comma-dangle': ['error', 'always-multiline'],
       '@stylistic/js/padded-blocks': ['error', 'never'],
-      '@stylistic/js/object-curly-spacing': ['error', 'always', { 'arraysInObjects': false, 'objectsInObjects': false }],
+      '@stylistic/js/object-curly-spacing': ['error', 'always', { 'arraysInObjects': false }],
+      '@stylistic/js/array-bracket-spacing': ['error', 'never', { 'objectsInArrays': false }],
       'no-console': 'off',
       'no-unused-vars': 'error',
       'no-undef': 'error',

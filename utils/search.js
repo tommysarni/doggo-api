@@ -1,3 +1,5 @@
+import { getQuizBreeds, getQuizEffects, getQuizScoreForBreed, getEffectsSummary, getEffectAnalysis } from './quiz.js';
+
 const toLightWeightData = (b) => {
   const { breed, slug, group } = b;
 
@@ -68,4 +70,25 @@ const filterBreeds = (filterObj, data) => {
   return data.filter(filterFunc).map(toLightWeightData);
 };
 
-export { searchByBreedName, getBreedList, filterBreeds };
+
+const searchBreedByQuizResults = (settings) => {
+  const { quizAnswers, quiz, data, options = { limit: 5 } } = settings;
+  const effects = getQuizEffects(quizAnswers, quiz);
+
+  const summary = getEffectsSummary(effects);
+  const eligibleBreeds = getQuizBreeds(data);
+
+  const scores = eligibleBreeds.map(getQuizScoreForBreed(effects));
+  let sortedScores = scores
+    .sort((a, b) => b.score - a.score)
+    .slice(0, options.limit);
+
+  if (!sortedScores.length) return { scores: []};
+
+  const analysis = getEffectAnalysis(summary, sortedScores[0]);
+
+  sortedScores = sortedScores.map(toLightWeightData);
+  return { scores: sortedScores, analysis };
+};
+
+export { searchByBreedName, getBreedList, filterBreeds, searchBreedByQuizResults };

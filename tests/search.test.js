@@ -1,6 +1,6 @@
-
-import breeds from '../data/breeds';
-import { searchByBreedName, getBreedList, filterBreeds } from '../utils/search';
+import breeds from './data/test-data';
+import { QUIZ } from '../utils/quiz';
+import { searchByBreedName, getBreedList, filterBreeds, searchBreedByQuizResults } from '../utils/search';
 
 describe('Search API', () => {
   it('searchByBreedName, empty', () => {
@@ -116,5 +116,27 @@ describe('Search API', () => {
     expect(last.slug).toEqual('standard-schnauzer');
 
     expect(list.length).toEqual(5);
+  });
+
+  it('searchBreedsByQuizResults ', () => {
+    const sampleAnswers = {
+      texture: 'sleek',
+      architecture: 'minimalist',
+      season: 'winter',
+      artwork: 'classic',
+      swatches: 'earthy',
+      fashion: 'timeless',
+      ambiance: 'cozy',
+      era: 'neutral',
+    };
+
+    const settings = {
+      quizAnswers: sampleAnswers,
+      quiz: QUIZ,
+      data: breeds,
+    };
+    const result = searchBreedByQuizResults(settings);
+
+    expect(result).toBeDefined();
   });
 });
